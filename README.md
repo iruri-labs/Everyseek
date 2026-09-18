@@ -34,20 +34,20 @@ Everyseek focuses on **filenames and paths**, not document contents. The index s
 
 **1.28 million indexed files and folders. 12 ms median search. Under 300 MB of observed RAM.** Everyseek keeps a large filesystem within reach while leaving room for the rest of your work.
 
-| Search benchmark | Result |
-| --- | --- |
-| Index searched | **1,278,913 items** — 1,153,005 files + 125,908 folders |
-| Results per request | **Up to 500**, sorted by name |
-| Median response | **12.25 ms** across 300 requests / 10 query strings |
-| Example searches | `readme` **9.11 ms** · `.pdf` **12.64 ms** · `계획` **1.86 ms** |
+| Search benchmark    | Result                                                          |
+| ------------------- | --------------------------------------------------------------- |
+| Index searched      | **1,278,913 items** — 1,153,005 files + 125,908 folders         |
+| Results per request | **Up to 500**, sorted by name                                   |
+| Median response     | **12.25 ms** across 300 requests / 10 query strings             |
+| Example searches    | `readme` **9.11 ms** · `.pdf` **12.64 ms** · `계획` **1.86 ms** |
 
-| Small resource footprint | Observed value |
-| --- | --- |
-| RAM | **Under 300 MB** — 255–274 MB in the running-app sample |
-| CPU | **1.7%** in a user-reported usage snapshot |
-| Complete on-disk index | **About 700 MB** — 721 MB including SQLite WAL and shared-memory files |
+| Small resource footprint | Observed value                                                         |
+| ------------------------ | ---------------------------------------------------------------------- |
+| RAM                      | **Under 300 MB** — 255–274 MB in the running-app sample                |
+| CPU                      | **1.7%** in a user-reported usage snapshot                             |
+| Complete on-disk index   | **About 700 MB** — 721 MB including SQLite WAL and shared-memory files |
 
-Measured on **Apple M4 Pro / 24 GiB / macOS 26.5**, September 19, 2026. Search numbers measure the release Rust engine through its CLI, with a warm cache and a 500-result cap; they exclude the app's 40 ms input debounce and screen rendering. Query selectivity matters: the broad single-letter query `a` took **851 ms median**, and overall p95 was **849 ms**. RAM and CPU are separate usage observations, not search-time limits; CPU rose during indexing in the verification session.
+Measured on Apple M4 Pro / 24 GiB / macOS 26.5
 
 [Full method, every query and resource context](docs/PERFORMANCE.md) · [Raw timing samples](docs/benchmark-2026-09-19.json) · [Reproduce the benchmark](scripts/benchmark-search.py)
 
