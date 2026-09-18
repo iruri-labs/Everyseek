@@ -1,0 +1,42 @@
+name: EverythingMac
+options:
+  bundleIdPrefix: com.everyseek
+  deploymentTarget:
+    macOS: "14.0"
+packages:
+  IndexCore:
+    path: ..
+targets:
+  EverythingMac:
+    type: application
+    platform: macOS
+    sources: [Sources, Assets.xcassets]
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: Everyseek
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+    entitlements:
+      path: Everyseek.entitlements
+    dependencies:
+      - package: IndexCore
+    settings:
+      base:
+        PRODUCT_NAME: Everyseek
+        PRODUCT_BUNDLE_IDENTIFIER: com.everyseek.app
+        MARKETING_VERSION: "0.4.9"
+        CURRENT_PROJECT_VERSION: "18"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_ENTITLEMENTS: Everyseek.entitlements
+        SWIFT_VERSION: "6.0"
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_IDENTITY: "-"
+        DEVELOPMENT_TEAM: ""
+        ENABLE_HARDENED_RUNTIME: YES
+        ENABLE_USER_SCRIPT_SANDBOXING: NO
+    preBuildScripts:
+      - name: Build Rust core
+        script: |
+          "$SRCROOT/../scripts/build-core.sh"
+        basedOnDependencyAnalysis: false

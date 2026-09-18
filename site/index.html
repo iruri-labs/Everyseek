@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7faf8" />
+    <title>Everyseek — Your files. Within reach.</title>
+    <meta
+      name="description"
+      content="Filename search for Mac, free for personal and internal business use. An independent index, saved between launches and updated as files change. Download the Apple-notarized universal app."
+    />
+    <link rel="canonical" href="https://iruri-labs.com/Everyseek/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Everyseek — Your files. Within reach." />
+    <meta
+      property="og:description"
+      content="A lightweight Mac search app with an index of its own. Source available, independent of Spotlight, and free for personal and internal business use."
+    />
+    <meta property="og:url" content="https://iruri-labs.com/Everyseek/" />
+    <meta
+      property="og:image"
+      content="https://iruri-labs.com/Everyseek/assets/launch-poster.jpg"
+    />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/app-icon.png" type="image/png" />
+    <link
+      rel="preload"
+      href="assets/manrope.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Main navigation">
+        <a class="wordmark" href="./" aria-label="Everyseek home"
+          ><img src="assets/app-icon.png" width="42" height="42" alt="" /><span
+            >Everyseek</span
+          ></a
+        >
+        <div class="nav-links">
+          <a href="#why">Why Everyseek</a>
+          <a href="https://github.com/iruri-labs/Everyseek"
+            >GitHub <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <a
+          class="nav-download"
+          href="https://github.com/iruri-labs/Everyseek/releases/download/v0.4.9/Everyseek-0.4.9-universal.dmg"
+          >Download <span aria-hidden="true">↓</span></a
+        >
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-art"
+          src="assets/hero.jpg"
+          width="1672"
+          height="941"
+          alt="A clear glass magnifier brings gentle mint and blue waves into focus."
+          fetchpriority="high"
+        />
+        <div class="hero-content shell">
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span> A small utility
+            for a big filesystem.
+          </p>
+          <h1 id="hero-title">Your files.<br />Within reach.</h1>
+          <p class="hero-description">
+            Filename search for Mac, with an index of its own. Lightweight,
+            persistent, and independent of Spotlight.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="button primary"
+              href="https://github.com/iruri-labs/Everyseek/releases/download/v0.4.9/Everyseek-0.4.9-universal.dmg"
+              >Download for Mac <span aria-hidden="true">↓</span></a
+            >
+            <a class="watch-link" href="#film"
+              ><span class="play-small" aria-hidden="true">▶</span> Watch the
+              22-second intro</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="film-section shell section-space"
+        id="film"
+        aria-labelledby="film-title"
+      >
+        <div class="section-heading">
+          <div>
+            <h2 id="film-title">From “where is it?”<br />to “there it is.”</h2>
+          </div>
+          <p>
+            Open Everyseek. Type a filename. See its place on your Mac, without
+            digging through folder after folder.
+          </p>
+        </div>
+        <figure class="film-frame">
+          <video
+            id="launch-film"
+            controls
+            playsinline
+            preload="none"
+            poster="assets/launch-poster.jpg"
+            width="1920"
+            height="1080"
+            aria-label="Everyseek introduction, 22 seconds"
+          >
+            <source src="assets/everyseek-intro.mp4" type="video/mp4" />
+            <track
+              kind="captions"
+              src="assets/intro-en.vtt"
+              srclang="en"
+              label="English"
+            />
+            <p>
+              Your browser does not support embedded video.
+              <a href="assets/everyseek-intro.mp4"
+                >Download the introduction.</a
+              >
+            </p>
+          </video>
+        </figure>
+      </section>
+
+      <section class="why-section" id="why" aria-labelledby="why-title">
+        <div class="shell section-space">
+          <div class="section-heading">
+            <div>
+              <h2 id="why-title">
+                An index of its own.<br />A little more peace of mind.
+              </h2>
+            </div>
+            <p>
+              Everyseek keeps a dedicated local index of filenames and paths. A
+              focused tool for a very familiar problem.
+            </p>
+          </div>
+          <div class="benefit-list">
+            <article class="benefit reveal">
+              <span class="benefit-number">01</span>
+              <h3>
+                Independent<br />
+                of Spotlight.
+              </h3>
+              <p>
+                Everyseek builds and searches its own index. It doesn't depend
+                on Spotlight's database to find your filenames.
+              </p>
+            </article>
+            <article class="benefit reveal">
+              <span class="benefit-number">02</span>
+              <h3>
+                Pick up where<br />
+                you left off.
+              </h3>
+              <p>
+                Your index is saved between launches. Searches use what is
+                already indexed while unfinished indexing resumes.
+              </p>
+            </article>
+            <article class="benefit reveal">
+              <span class="benefit-number">03</span>
+              <h3>
+                Keep up.<br />
+                Quietly.
+              </h3>
+              <p>
+                Filesystem changes update the index incrementally. If a folder
+                becomes unavailable, known results are kept, with controls to
+                retry or exclude it.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="download-section"
+        id="download"
+        aria-labelledby="download-title"
+      >
+        <div class="shell download-inner">
+          <img
+            src="assets/app-icon.png"
+            width="112"
+            height="112"
+            alt=""
+            loading="lazy"
+          />
+          <div>
+            <p class="eyebrow">AVAILABLE NOW / v0.4.9</p>
+            <h2 id="download-title">Keep it within reach.</h2>
+            <p>Free for personal &amp; internal business use.</p>
+          </div>
+          <div class="download-actions">
+            <a
+              class="button primary"
+              href="https://github.com/iruri-labs/Everyseek/releases/download/v0.4.9/Everyseek-0.4.9-universal.dmg"
+              >Download for Mac <span aria-hidden="true">↓</span></a
+            ><a
+              class="text-link"
+              href="https://github.com/iruri-labs/Everyseek/releases/latest"
+              >Release notes, ZIP &amp; checksums
+              <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="faq-section shell section-space"
+        aria-labelledby="faq-title"
+      >
+        <div>
+          <p class="eyebrow">GOOD TO KNOW</p>
+          <h2 id="faq-title">Small app.<br />Clear answers.</h2>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>How do I install it?</summary>
+            <p>
+              Download the DMG, open it, and drag Everyseek into Applications.
+              Launch it from there. Grant Full Disk Access in System Settings →
+              Privacy &amp; Security when prompted to index protected folders.
+              The first index takes time; later launches reuse it.
+            </p>
+          </details>
+          <details>
+            <summary>Which Macs does it support?</summary>
+            <p>
+              macOS 14 Sonoma or later, on Apple Silicon and Intel. The same
+              universal download supports both. The app and DMG are Developer ID
+              signed and notarized by Apple.
+            </p>
+          </details>
+          <details>
+            <summary>Can I use Everyseek at work for free?</summary>
+            <p>
+              Yes. Personal use and internal company use are free, including
+              at for-profit businesses. You may deploy it to your team and
+              modify it for internal operations. Finding files for paid work
+              does not require a commercial license.
+            </p>
+          </details>
+          <details>
+            <summary>Can I sell it or use its code in a paid product?</summary>
+            <p>
+              Selling the app or a modified version, including covered code in
+              a paid product, or offering paid hosting, API access, or other
+              monetized services requires prior written permission from
+              Irurilabs Corp.
+              <a href="https://github.com/iruri-labs/Everyseek/issues">Request commercial permission.</a>
+            </p>
+          </details>
+          <details>
+            <summary>Is the source code available?</summary>
+            <p>
+              Yes, under the
+              <a href="https://github.com/iruri-labs/Everyseek/blob/main/LICENSE">Everyseek License 1.0</a>.
+              Free redistribution with the required notices is allowed when
+              it is not monetized. These commercial restrictions mean the
+              current license is not an OSI-approved open-source license.
+              All original Everyseek additions and modifications in this
+              distribution use Everyseek License 1.0. Original EverythingMac
+              portions retain MIT; MIT is not an alternative license for
+              Everyseek's contributions.
+              <a href="https://github.com/iruri-labs/Everyseek/blob/main/NOTICE">Read the licensing notice.</a>
+            </p>
+          </details>
+          <details>
+            <summary>Does it search inside documents?</summary>
+            <p>
+              Everyseek focuses on filenames and paths. It does not index
+              document contents. It is useful when you remember all or part of a
+              file's name.
+            </p>
+          </details>
+          <details>
+            <summary>Will it index every location?</summary>
+            <p>
+              Access depends on macOS permissions and your exclusions. System
+              folders and your user Library are excluded by default; you can
+              edit the list. Mounted local drives can be included by removing
+              /Volumes from exclusions. Network volumes and remote-only cloud
+              inventories are not guaranteed.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer class="footer shell">
+      <a class="wordmark" href="./"
+        ><img src="assets/app-icon.png" width="32" height="32" alt="" /><span
+          >Everyseek</span
+        ></a
+      >
+      <p>Made by Irurilabs. © 2026</p>
+      <div>
+        <a href="https://github.com/iruri-labs/Everyseek">GitHub</a
+        ><a href="https://github.com/iruri-labs/Everyseek/blob/main/LICENSE"
+          >Custom License</a
+        ><a href="credits.html">Credits</a>
+      </div>
+    </footer>
+  </body>
+</html>

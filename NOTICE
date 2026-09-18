@@ -1,0 +1,49 @@
+Everyseek
+Copyright (c) 2026 Irurilabs Corp.
+
+Everyseek Contributions
+
+All copyrightable original code, additions, and modifications authored by
+or owned by Irurilabs Corp. in this distribution are licensed under the
+Everyseek License 1.0 in LICENSE. This includes the original Rust engine,
+Swift/C integration, UI changes, build and packaging changes, and other
+original project materials, whether added in a new file or an existing file.
+
+This allocation is based on authorship, not on the Everyseek version in
+which a contribution first appeared. Everyseek Contributions are not
+offered under MIT as an alternative in this distribution.
+
+Personal use and internal company use remain free. Commercial exploitation
+of Everyseek Contributions requires prior written permission from
+Irurilabs Corp. under LICENSE.
+
+Original EverythingMac material
+
+Upstream project: https://github.com/alesloa/everything-mac
+Reference revision: bb178c419f518f7a32dc7b70bebb4677464ecd93 (v0.3.0)
+Copyright (c) 2026 Alejandro Sloan
+
+Original material inherited from that project remains under the MIT
+license reproduced in LICENSES/upstream-everything-mac-MIT.txt. Its license
+and copyright notice must be preserved. That MIT grant covers the upstream
+material, not Irurilabs Corp.'s separate additions and modifications.
+
+Mixed files contain both kinds of material; modifying a file does not
+transfer ownership of its inherited contents. LICENSES/README.md records
+the source reference and allocation guidance.
+
+Other third-party material
+
+Rust dependencies retain their respective licenses. Release builds bundle
+LICENSE, this NOTICE, the upstream MIT text, the allocation guide, and
+dependency notices in:
+Everyseek.app/Contents/Resources/ThirdPartyNotices.txt
+
+Website fonts, music, and sound effects retain their separate licenses.
+See site/credits.html and site/assets/Manrope-OFL.txt.
+
+Existing separate rights
+
+These notices describe the terms of this distribution. They do not revoke
+rights that a recipient has already validly obtained under another license,
+if any. No claim is made that changing notices erases prior grants.

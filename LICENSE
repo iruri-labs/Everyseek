@@ -1,0 +1,123 @@
+Everyseek License 1.0
+
+Copyright (c) 2026 Irurilabs Corp.
+
+1. Scope and ownership
+
+"Licensor" means Irurilabs Corp. "Everyseek Contributions" means all
+copyrightable original code, additions, modifications, and accompanying
+materials authored by or owned by Licensor and supplied in this
+distribution. This includes contributions in new files and modifications
+within files inherited from another project, regardless of when those
+contributions were first written.
+
+"Software" means the Everyseek Contributions, including covered portions
+in modified versions and derivative works, in source or binary form.
+"You" means the individual or organization exercising these permissions.
+
+All Everyseek Contributions in this distribution are offered under this
+Everyseek License 1.0. They are not offered under MIT as an alternative
+license. The presence of an upstream MIT notice in the same repository,
+file, or binary does not license Everyseek Contributions under MIT.
+
+Original material inherited from alesloa/everything-mac, copyright (c)
+2026 Alejandro Sloan, remains under its own MIT license, reproduced in
+LICENSES/upstream-everything-mac-MIT.txt. Other third-party material retains
+its respective license. In a mixed file, the upstream license applies to
+the inherited original material, while this license applies to Licensor's
+copyrightable additions and modifications. See NOTICE and LICENSES/README.md.
+
+This license governs Licensor's distribution of the Everyseek Contributions.
+It does not claim ownership of upstream material or revoke rights that a
+recipient has already validly obtained under a separate license, if any.
+
+2. Permitted use
+
+Subject to the conditions below, Licensor grants you a worldwide,
+non-exclusive, royalty-free copyright license to inspect, use, copy, modify,
+and create derivative works of the Software for:
+
+(a) personal use, education, research, and other non-monetized use; and
+(b) your organization's internal business operations, including operations
+    of a for-profit business.
+
+Internal business use includes deployment to employees and contractors
+acting solely on your organization's behalf, and internal modifications,
+integrations, and automation. There is no license fee based on company size
+or the number of internal users.
+
+You may distribute original or modified copies without charge, provided the
+distribution is not commercial exploitation described in section 3 and you
+comply with section 4. Recipients receive the same permissions directly from
+Licensor under this license. You may make the Software's functionality
+available to others without charge if doing so does not constitute commercial
+exploitation under section 3.
+
+Using the Software to locate or manage files for your job or your own
+business is permitted, even when that work earns income. Your files, search
+results, and ordinary work products do not become subject to this license
+merely because you use the Software. Ordinary salaries and revenue from
+your own work or business are not commercial exploitation of the Software.
+
+3. Commercial exploitation requires permission
+
+The permissions above do not include the right to commercially exploit the
+Software or covered portions of it. You must obtain a separate, prior
+written license from Licensor before:
+
+(a) selling, renting, licensing for a fee, or otherwise supplying original
+    or modified copies of the Software for monetary or other compensation;
+(b) embedding or bundling the Software, or covered code from it, in a product
+    or service supplied to third parties for a fee or other compensation;
+(c) charging third parties for access to the Software's functionality,
+    including hosted, managed, SaaS, API, subscription, or white-label access;
+(d) monetizing an externally offered version or service through advertising,
+    paid tiers, paid access, or similar revenue tied to its functionality; or
+(e) supplying paid customization, development, or support whose primary
+    deliverable is the Software, a modified version, or operation of the
+    Software for a third party.
+
+These restrictions apply even if you rename the Software, change its user
+interface, modify it substantially, or incorporate covered code into a
+larger work. They do not extend to independently created code that does not
+contain or derive from covered material, or to your use of rights preserved
+by section 1.
+
+Employees and contractors may be paid to administer or modify the Software
+solely for the organization's permitted internal use. This does not permit
+them to sell a separately offered Everyseek-based product or hosted service.
+A business does not need permission merely because it uses the Software
+internally while selling unrelated products or services.
+
+To request commercial permission, contact Irurilabs Corp. through:
+https://github.com/iruri-labs/Everyseek/issues
+Opening a request does not itself grant permission.
+
+4. Notices and redistribution
+
+All copies or substantial portions of the Software that you distribute must
+include this license, NOTICE, and all applicable copyright and third-party
+license notices. Identify modifications and do not represent a modified
+version as an official release by Licensor.
+
+You may not remove these notices, grant recipients rights in covered
+material beyond those granted here, or present this license as an
+OSI-approved open-source license. This is a source-available license with
+commercial restrictions. It does not require you to publish private internal
+modifications. No trademark rights or endorsement rights are granted.
+
+5. Termination
+
+The permissions under this license terminate automatically if you violate
+its conditions. Licensor may reinstate them in writing. Termination under
+this license does not affect rights independently granted under a prior MIT
+license or another applicable third-party license.
+
+6. Disclaimer
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE IS PROVIDED
+"AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+NONINFRINGEMENT. IN NO EVENT SHALL LICENSOR OR THE AUTHORS BE LIABLE FOR
+ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE SOFTWARE OR ITS USE,
+WHETHER IN CONTRACT, TORT, OR OTHERWISE.

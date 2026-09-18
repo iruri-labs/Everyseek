@@ -1,0 +1,24 @@
+# Build artifacts
+.build/
+DerivedData/
+App/build/
+App/*.app
+
+# XcodeGen output (regenerated from App/project.yml by scripts/build-dev.sh)
+*.xcodeproj
+*.xcworkspace
+.swiftpm/
+
+Core/target/
+dist/
+
+# Local project notes and branding drafts (final artwork lives in logo/)
+/docs/
+/assets/branding/
+/brag-output*/
+node_modules/
+
+# macOS, logs, crash dumps
+.DS_Store
+*.log
+*.crash

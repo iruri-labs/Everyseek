@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://iruri-labs.com/Everyseek/sitemap.xml
