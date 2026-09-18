@@ -4,7 +4,7 @@
 
 <h1 align="center">Everyseek</h1>
 <p align="center"><strong>Your files. Within reach.</strong></p>
-<p align="center">Lightweight filename search for Mac, with an index of its own.</p>
+<p align="center">Lightweight file search for Mac, with an index of its own.</p>
 
 <p align="center">
   <a href="https://github.com/iruri-labs/Everyseek/releases/download/v0.4.9/Everyseek-0.4.9-universal.dmg"><strong>Download for Mac</strong></a>
@@ -22,17 +22,11 @@
 
 Everyseek builds a dedicated local filename index, independent of Spotlight. Open it, type a name, and see matching files with their containing folders.
 
-| An index of its own | Built for everyday use |
-| --- | --- |
-| **Independent of Spotlight** — search uses Everyseek's own Rust + SQLite index. | **Native Mac interface** — filenames, folders, size, kind and familiar Finder actions. |
-| **Saved between launches** — reuse the existing index while unfinished work resumes. | **Korean filename search** — ordinary syllable matching across NFC/NFD forms. |
-| **Incremental updates** — file changes update the index without starting over. | **You choose the scope** — editable exclusions and per-folder retry controls. |
-
-### See the app
-
-![Actual Everyseek window searching a curated demo library for launch files](site/assets/search-launch.png)
-
-*Actual app with demo files. Full Disk Access is requested for protected folders.*
+| An index of its own                                                                  | Built for everyday use                                                                 |
+| ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| **Independent of Spotlight** — search uses Everyseek's own Rust + SQLite index.      | **Native Mac interface** — filenames, folders, size, kind and familiar Finder actions. |
+| **Saved between launches** — reuse the existing index while unfinished work resumes. | **Korean filename search** — ordinary syllable matching across NFC/NFD forms.          |
+| **Incremental updates** — file changes update the index without starting over.       | **You choose the scope** — editable exclusions and per-folder retry controls.          |
 
 Everyseek focuses on **filenames and paths**, not document contents. The index stays on your Mac. Access depends on macOS permissions and your chosen exclusions.
 
@@ -138,24 +132,17 @@ The new index is `~/Library/Application Support/Everything-Mac/index-v1.sqlite`.
 
 Applying changed exclusions removes matching directory subtrees and FTS entries directly from SQLite before the remaining scope is reconciled. Exclusion text is stored separately from NFC-normalized engine rules; both settings tabs edit the same list.
 
-
 </details>
-
-## Launch media
-
-[Watch the film](https://iruri-labs.com/Everyseek/#film) · [Download MP4](https://iruri-labs.com/Everyseek/assets/everyseek-intro.mp4) · [Artwork, music and font credits](https://iruri-labs.com/Everyseek/credits.html)
-
-The website, screenshots and final video assets live in `site/`. The site is deployed to GitHub Pages from `main` by [the Pages workflow](.github/workflows/pages.yml).
 
 ## License
 
 Everyseek uses the [Everyseek License 1.0](LICENSE). **Personal use and internal company use are free, including at for-profit businesses.** Monetizing the software or covered original/modified code requires **prior written permission from Irurilabs Corp.**
 
-| Use | Permission |
-| --- | --- |
-| Search files for personal use or everyday work at a company | Free |
-| Deploy to employees or modify it for your company's internal operations | Free; internal modifications may stay private |
-| Share original or modified copies without charge or monetization | Allowed with the required license and notices |
+| Use                                                                                                                                               | Permission                                      |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| Search files for personal use or everyday work at a company                                                                                       | Free                                            |
+| Deploy to employees or modify it for your company's internal operations                                                                           | Free; internal modifications may stay private   |
+| Share original or modified copies without charge or monetization                                                                                  | Allowed with the required license and notices   |
 | Sell the app or a modified version; include covered code in a paid product; offer paid hosting, SaaS, API access, or other monetized distribution | Separate written commercial permission required |
 
 Your own files and work products are not covered merely because you find or manage them with Everyseek. Earning a salary or selling unrelated work does not require a commercial license.
