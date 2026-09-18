@@ -45,6 +45,7 @@
           ></a
         >
         <div class="nav-links">
+          <a href="#performance">Performance</a>
           <a href="#why">Why Everyseek</a>
           <a href="https://github.com/iruri-labs/Everyseek"
             >GitHub <span aria-hidden="true">↗</span></a
@@ -88,6 +89,164 @@
               22-second intro</a
             >
           </div>
+        </div>
+      </section>
+
+      <section
+        class="performance-section"
+        id="performance"
+        aria-labelledby="performance-title"
+      >
+        <div class="shell section-space">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">SMALL FOOTPRINT. SERIOUS SPEED.</p>
+              <h2 id="performance-title">
+                Over a million items.<br />Remarkably little overhead.
+              </h2>
+            </div>
+            <p>
+              A real index of <strong>1,278,913 files and folders</strong>. Up
+              to <strong>500 results</strong> per search. Built to leave room
+              for the rest of your work.
+            </p>
+          </div>
+          <div class="performance-grid">
+            <div class="search-stat">
+              <p class="stat-label">MEDIAN SEARCH RESPONSE</p>
+              <p class="search-value">12<span>ms</span></p>
+              <p class="stat-context">
+                300 measured requests. 10 query strings.<br />The same Rust
+                search engine that powers the app.
+              </p>
+            </div>
+            <dl class="resource-stats">
+              <div>
+                <dt>RAM observed</dt>
+                <dd>
+                  &lt;300<span>MB</span>
+                  <p>255–274 MB in the running-app sample.</p>
+                </dd>
+              </div>
+              <div>
+                <dt>CPU · reported snapshot</dt>
+                <dd>1.7<span>%</span>
+                  <p>A user's usage observation. Varies with activity.</p>
+                </dd>
+              </div>
+              <div>
+                <dt>Complete local index</dt>
+                <dd>~700<span>MB</span>
+                  <p>721 MB including SQLite support files.</p>
+                </dd>
+              </div>
+            </dl>
+          </div>
+          <p class="performance-note">
+            Apple M4 Pro · 24 GiB · macOS 26.5 · September 19, 2026. Warm-cache
+            engine responses; input debounce and screen rendering excluded.
+            Query medians range from 0.49 ms to 851 ms; overall p95 is 849 ms.
+            Resource figures are separate observations, not usage limits; CPU
+            rises during indexing.
+          </p>
+          <details class="benchmark-details">
+            <summary>
+              Explore the measurements <span aria-hidden="true">+</span>
+            </summary>
+            <div class="benchmark-body">
+              <div class="benchmark-table-wrap">
+                <table class="benchmark-table">
+                  <caption>
+                    30 requests per query · filename substring search ·
+                    500-result cap
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Search string</th>
+                      <th scope="col">Results</th>
+                      <th scope="col">Median</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"><code>readme</code></th>
+                      <td>500 + more</td>
+                      <td>9.11 ms</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><code>config</code></th>
+                      <td>500 + more</td>
+                      <td>25.62 ms</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><code>report</code></th>
+                      <td>500 + more</td>
+                      <td>13.66 ms</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><code>.pdf</code></th>
+                      <td>500 + more</td>
+                      <td>12.64 ms</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><code>.png</code></th>
+                      <td>500 + more</td>
+                      <td>61.38 ms</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><code>계획</code></th>
+                      <td>240</td>
+                      <td>1.86 ms</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><code>보고서</code></th>
+                      <td>176</td>
+                      <td>1.52 ms</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><code>정산</code></th>
+                      <td>5</td>
+                      <td>0.49 ms</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><code>a</code></th>
+                      <td>500 + more</td>
+                      <td>850.78 ms</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><code>zzzxq_no_match_20260919</code></th>
+                      <td>0</td>
+                      <td>3.90 ms</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="benchmark-method">
+                <h3>Real files. Repeatable numbers.</h3>
+                <p>
+                  We searched an isolated copy of an everyday-use index:
+                  1,153,005 files and 125,908 folders. Each query ran 30 times
+                  after warm-up, with the order shuffled between rounds.
+                </p>
+                <p>
+                  The exact overall median was <strong>12.25 ms</strong>. Broad
+                  searches do more work: the one-letter query <code>a</code>
+                  took 851 ms median even with only 500 results returned.
+                </p>
+                <p>
+                  Timed through the v0.4.9 release engine's CLI, including the
+                  complete result response. The app adds a 40 ms input debounce
+                  and rendering. RAM was sampled separately on the installed
+                  v0.4.7 app; the 1.7% CPU snapshot was user-reported.
+                </p>
+                <a
+                  href="https://github.com/iruri-labs/Everyseek/blob/main/docs/PERFORMANCE.md"
+                  >Method, raw samples &amp; reproduction steps
+                  <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+          </details>
         </div>
       </section>
 
@@ -249,35 +408,41 @@
           <details>
             <summary>Can I use Everyseek at work for free?</summary>
             <p>
-              Yes. Personal use and internal company use are free, including
-              at for-profit businesses. You may deploy it to your team and
-              modify it for internal operations. Finding files for paid work
-              does not require a commercial license.
+              Yes. Personal use and internal company use are free, including at
+              for-profit businesses. You may deploy it to your team and modify
+              it for internal operations. Finding files for paid work does not
+              require a commercial license.
             </p>
           </details>
           <details>
             <summary>Can I sell it or use its code in a paid product?</summary>
             <p>
-              Selling the app or a modified version, including covered code in
-              a paid product, or offering paid hosting, API access, or other
+              Selling the app or a modified version, including covered code in a
+              paid product, or offering paid hosting, API access, or other
               monetized services requires prior written permission from
               Irurilabs Corp.
-              <a href="https://github.com/iruri-labs/Everyseek/issues">Request commercial permission.</a>
+              <a href="https://github.com/iruri-labs/Everyseek/issues"
+                >Request commercial permission.</a
+              >
             </p>
           </details>
           <details>
             <summary>Is the source code available?</summary>
             <p>
               Yes, under the
-              <a href="https://github.com/iruri-labs/Everyseek/blob/main/LICENSE">Everyseek License 1.0</a>.
-              Free redistribution with the required notices is allowed when
+              <a
+                href="https://github.com/iruri-labs/Everyseek/blob/main/LICENSE"
+                >Everyseek License 1.0</a
+              >. Free redistribution with the required notices is allowed when
               it is not monetized. These commercial restrictions mean the
-              current license is not an OSI-approved open-source license.
-              All original Everyseek additions and modifications in this
+              current license is not an OSI-approved open-source license. All
+              original Everyseek additions and modifications in this
               distribution use Everyseek License 1.0. Original EverythingMac
               portions retain MIT; MIT is not an alternative license for
               Everyseek's contributions.
-              <a href="https://github.com/iruri-labs/Everyseek/blob/main/NOTICE">Read the licensing notice.</a>
+              <a href="https://github.com/iruri-labs/Everyseek/blob/main/NOTICE"
+                >Read the licensing notice.</a
+              >
             </p>
           </details>
           <details>
